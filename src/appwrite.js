@@ -60,3 +60,5 @@ export const getTrendingMovies=async () => {
     }
     
 }
+
+console.log("ENV Vars:", import.meta.env);
