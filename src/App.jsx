@@ -6,7 +6,7 @@ import TrendingCard from './components/TrendingCard.jsx';
 import { useDebounce } from 'react-use';
 import { getTrendingMovies, updateSearchCount, account } from './appwrite.js';
 import React from 'react';
-
+//Trigger redeployment
 // Apply persisted theme from localStorage BEFORE React renders
 if (
   localStorage.theme === 'dark' ||
