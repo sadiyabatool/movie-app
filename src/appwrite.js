@@ -17,7 +17,7 @@ export const account=new Account(client);
 console.log("✅ ENDPOINT:", import.meta.env.VITE_APPWRITE_ENDPOINT);
 
 
-
+//comment
 export const updateSearchCount=async (searchTerm,movie) => {
     try{
         const result=await database.listDocuments(DATABASE_ID,COLLECTION_ID,[Query.equal('searchTerm',searchTerm)])
