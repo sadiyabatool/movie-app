@@ -14,6 +14,7 @@ const database=new Databases(client);
 export const account=new Account(client);
 console.log("✅ ENDPOINT:", import.meta.env.VITE_APPWRITE_ENDPOINT);
 
+console.log("ENV Vars:", import.meta.env);
 
 export const updateSearchCount=async (searchTerm,movie) => {
     try{
@@ -60,5 +61,3 @@ export const getTrendingMovies=async () => {
     }
     
 }
-
-console.log("ENV Vars:", import.meta.env);
