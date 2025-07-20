@@ -6,6 +6,7 @@ const PROJECT_ID=import.meta.env.VITE_APPWRITE_PROJECT_ID;
 const client=new Client();
 const endpoint = import.meta.env.VITE_APPWRITE_ENDPOINT || 'FALLBACK_NOT_FOUND';
 console.log("ENV Vars:", import.meta.env);
+console.log("SB");
 console.log(import.meta.env.VITE_APPWRITE_ENDPOINT);
 console.log("🔍 Endpoint is:", import.meta.env.VITE_APPWRITE_ENDPOINT);
 
