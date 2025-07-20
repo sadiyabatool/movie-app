@@ -12,7 +12,7 @@ if (
 } else {
   document.documentElement.classList.remove('dark');
 }
-
+console.log("ENV ENDPOINT ( inline check):",import.meta.env.VITE_APPWRITE_ENDPOINT);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
