@@ -5,6 +5,7 @@ const COLLECTION_ID=import.meta.env.VITE_APPWRITE_METRICS_COLLECTION_ID;
 const PROJECT_ID=import.meta.env.VITE_APPWRITE_PROJECT_ID;
 const client=new Client();
 const endpoint = import.meta.env.VITE_APPWRITE_ENDPOINT || 'FALLBACK_NOT_FOUND';
+console.log("ENV Vars:", import.meta.env);
 console.log("🔍 Endpoint is:", import.meta.env.VITE_APPWRITE_ENDPOINT);
 
 client.setEndpoint(import.meta.env.VITE_APPWRITE_ENDPOINT)
@@ -14,7 +15,7 @@ const database=new Databases(client);
 export const account=new Account(client);
 console.log("✅ ENDPOINT:", import.meta.env.VITE_APPWRITE_ENDPOINT);
 
-console.log("ENV Vars:", import.meta.env);
+
 
 export const updateSearchCount=async (searchTerm,movie) => {
     try{
